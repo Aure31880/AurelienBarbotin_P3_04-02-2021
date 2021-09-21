@@ -1,0 +1,16 @@
+.fa-heart {
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    overflow: visible;
+    color: #000000;
+}
+
+.fa-heart::before {
+    content: "\f004";
+    transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
+    color: red;
+    cursor: pointer;
+}
