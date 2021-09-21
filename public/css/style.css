@@ -150,6 +150,45 @@ input {
   color: white;
 }
 
+/* SECTION MAIN FUNCTIONING*/
+.bshadow {
+  box-shadow: #dddddd 0px 6px 29px 0px;
+}
+
+.functioning__choices {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+.functioning__choice {
+  padding: 20px 25px;
+  margin-top: 20px;
+}
+.functioning__btn-functioning {
+  width: 100%;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  border: none;
+  font-weight: 900;
+  font-size: 16px;
+}
+.functioning__number {
+  width: 12px;
+  height: 12px;
+  padding: 7px;
+  margin-left: -30px;
+  margin-right: 20px;
+  border-radius: 25px;
+  background-color: #9356DC;
+  color: #ffffff;
+  font-size: 14px;
+}
+.functioning__text-choice {
+  margin-right: auto;
+  margin-left: 20px;
+  font-weight: 900;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
