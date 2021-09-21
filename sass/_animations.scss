@@ -1,0 +1,36 @@
+@keyframes loader {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+        border-top-color: $violet;
+        border-bottom-color: $violet;
+    }
+    25% {
+        opacity: 1;
+        border-top-color: $pink;
+        border-bottom-color: $pink;
+    }
+    50%, 74%{
+        opacity: 0.8;
+        transform: rotate(360deg) scale(1.15);
+        border-top-color: $green;
+        border-bottom-color: $green;
+    }
+    75%, 99%{
+        opacity: 0.5;
+        border-top-color: $violet;
+        border-bottom-color: $violet;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes loadingPage {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -144,6 +144,34 @@ input {
   color: #9356DC;
 }
 
+header, section, footer {
+  animation: loadingPage 6s ease-in-out;
+}
+
+/* LOADER SPINNER */
+.spinner__container {
+  position: fixed;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+.spinner__container .spinner {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 12px solid #bdc3c7;
+  width: 80px;
+  height: 80px;
+  border-top-color: #1abc9c;
+  border-bottom-color: #3498db;
+  border-radius: 50%;
+  animation: loader 3s;
+  animation-fill-mode: forwards;
+}
+
 /* HEADER */
 .headerHome {
   margin-top: 20px;
@@ -246,7 +274,7 @@ input {
   padding: 5%;
   line-height: 20px;
 }
-.restaurants__hover-rate:hover {
+.restaurants__hover-rate:active {
   font-weight: bold;
   transition-delay: 2s ease-out;
   background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
@@ -427,6 +455,41 @@ hr {
   background: linear-gradient(to top, #9256dcb0, #ff79d9d0);
 }
 
+@keyframes loader {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    border-top-color: #9356DC;
+    border-bottom-color: #9356DC;
+  }
+  25% {
+    opacity: 1;
+    border-top-color: #FF79DA;
+    border-bottom-color: #FF79DA;
+  }
+  50%, 74% {
+    opacity: 0.8;
+    transform: rotate(360deg) scale(1.15);
+    border-top-color: #99E2D0;
+    border-bottom-color: #99E2D0;
+  }
+  75%, 99% {
+    opacity: 0.5;
+    border-top-color: #9356DC;
+    border-bottom-color: #9356DC;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loadingPage {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
