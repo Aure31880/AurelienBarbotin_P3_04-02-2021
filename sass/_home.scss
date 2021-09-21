@@ -1,10 +1,141 @@
+/* GENERAL */ 
+
+$grey1: #eaeaea;
+$grey2: #f6f6f6;
+$pink: #FF79DA;
+$pinkligth: #f5edff;
+$violet: #9356DC;
+$greendark: #008766;
+$white: #FFFFFF;
+$black: #000000;
+$green: #99E2D0;
+
 .logo {
     width: 150px;
 }
+
+.font-title-h2 {
+    font-weight: 500;
+}
+
+.font-title-h3 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.font-title-h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p, a, li, input, div, h2, h3, h4{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: $black;
+}
+
+input {
+    background: #F1F1F1;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.flex-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.content-center {
+    text-align: center;
+}
+
+.column-around {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column-between {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border {
+    border-radius: 20px;
+}
+
+.top-margin-section {
+    margin-top: 50px;
+}
+
+.padding-section {
+    padding: 40px;
+}
+
+.margin-section {
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.bottom-padding {
+    padding-bottom: 50px;
+}
+
+.paddingtop {
+    padding-top: 40px;
+
+}
+
+.title-margin-left {
+    margin-left: 20px;
+}
+
+.back-grey {
+    background: $grey2;
+}
+
+.back-pink-light {
+    background: $pinkligth;
+}
+
+/* HEADER */
 
 .headerHome {
     margin-top: 20px;
     &__logo-box {
         text-align: center;
+    }
+    &__location {
+        height: 50px;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1) inset;
+        background: $grey1;
+    }
+    &__city {
+        margin-left: 10px;
     }
 }
