@@ -105,6 +105,11 @@ input {
   background: #f5edff;
 }
 
+.size-icon {
+  font-size: 20px;
+  min-width: 20px;
+}
+
 /* HEADER */
 .headerHome {
   margin-top: 20px;
@@ -187,6 +192,37 @@ input {
   margin-right: auto;
   margin-left: 20px;
   font-weight: 900;
+}
+
+/* SECTION LIST RESTAURANTS*/
+.restaurants__item {
+  margin-top: 20px;
+  width: 100%;
+  background: #FFFFFF;
+}
+.restaurants__new-select {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background: #99E2D0;
+  color: #139273;
+}
+.restaurants__details-item {
+  padding: 5%;
+  line-height: 20px;
+}
+
+.far, .fas {
+  font-size: 20px;
+}
+
+.restaurants__item-img1 {
+  background-image: url("/public/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  border-radius: 20px 20px 0 0;
 }
 
 html, body, div, span, applet, object, iframe,

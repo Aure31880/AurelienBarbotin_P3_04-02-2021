@@ -115,6 +115,11 @@ input {
     background: $pinkligth;
 }
 
+.size-icon {
+    font-size: 20px;
+    min-width: 20px;
+}
+
 /* HEADER */
 
 .headerHome {
@@ -206,4 +211,42 @@ input {
              font-weight: 900;
          } 
       
+}
+
+/* SECTION LIST RESTAURANTS*/
+
+.restaurants {
+    &__item {
+        margin-top: 20px;
+        width: 100%;
+        background: $white;
+    }
+    &__new-select {
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        background: $green;
+        color: #139273;
+    }
+    
+    &__details-item {
+        padding: 5%;
+        line-height: 20px;
+    } 
+}
+
+.far, .fas {
+    font-size: 20px;
+}  
+
+
+
+.restaurants__item-img1 {
+    background-image: url("/public/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+
 }
