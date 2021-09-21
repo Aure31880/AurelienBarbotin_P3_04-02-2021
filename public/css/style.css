@@ -72,6 +72,10 @@ input {
   border-radius: 20px;
 }
 
+.border-btn {
+  border-radius: 30px;
+}
+
 .top-margin-section {
   margin-top: 50px;
 }
@@ -107,6 +111,18 @@ input {
 
 .back-black {
   background: #353535;
+}
+
+.bshadow {
+  box-shadow: #cacaca 0px 3px 14px 0px;
+}
+
+.btnshadow {
+  box-shadow: #afafaf 0px 3px 14px 0px;
+}
+
+.btnshadow:hover {
+  box-shadow: #929292 0px 3px 14px 0px;
 }
 
 .size-icon {
@@ -165,19 +181,17 @@ input {
   margin-bottom: 30px;
   height: 20px;
   width: 200px;
-  padding: 10px;
-  border: 0.5px;
+  padding: 15px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
+}
+.headerHome__btn:hover {
+  background: linear-gradient(to top, #9256dcb0, #ff79d9d0);
 }
 .headerHome__btn-see-more {
   color: white;
 }
 
 /* SECTION MAIN FUNCTIONING*/
-.bshadow {
-  box-shadow: #dddddd 0px 6px 29px 0px;
-}
-
 .functioning__choices {
   margin-top: 30px;
   margin-left: 30px;
@@ -383,18 +397,21 @@ hr {
 }
 
 /* BUTTON VALID ORDERED */
-.btn-ordered {
+.btnOrdered {
   margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
 }
-
-.btn-ordered-submit {
+.btnOrdered__submit {
   height: 40px;
   width: 180px;
   border: none;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   color: #FFFFFF;
+  transition: background 1s ease-in-out;
+}
+.btnOrdered__submit:hover {
+  background: linear-gradient(to top, #9256dcb0, #ff79d9d0);
 }
 
 html, body, div, span, applet, object, iframe,
