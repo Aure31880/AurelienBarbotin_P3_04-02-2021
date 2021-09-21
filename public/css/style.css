@@ -320,6 +320,21 @@ input {
   height: auto;
 }
 
+/* MENU CARD */
+#card {
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  margin-top: -50px;
+  padding: 20px;
+}
+
+.cardTitle__title {
+  font-size: 26px;
+}
+.cardTitle__icon {
+  margin-right: 20px;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -374,6 +389,10 @@ p, a, li, input, div, h2, h3, h4 {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #000000;
+}
+
+.font-title {
+  font-family: "Shrikhand", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */
