@@ -225,6 +225,30 @@ input {
   border-radius: 20px 20px 0 0;
 }
 
+.restaurants__item-img2 {
+  background-image: url("/public/images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  border-radius: 20px 20px 0 0;
+}
+
+.restaurants__item-img3 {
+  background-image: url("/public/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  border-radius: 20px 20px 0 0;
+}
+
+.restaurants__item-img4 {
+  background-image: url("/public/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  border-radius: 20px 20px 0 0;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
