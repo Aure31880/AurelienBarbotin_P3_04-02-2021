@@ -45,3 +45,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+p, a, li, input, div, h2, h3, h4{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: $black;
+}

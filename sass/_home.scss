@@ -28,12 +28,6 @@ $green: #99E2D0;
     font-size: 16px;
 }
 
-p, a, li, input, div, h2, h3, h4{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    color: $black;
-}
-
 input {
     background: #F1F1F1;
 }
@@ -137,5 +131,32 @@ input {
     }
     &__city {
         margin-left: 10px;
+    }
+    &__presentation{
+        text-align: center;
+        background: $grey2;
+    }
+    &__subtitle-presentation {
+        width: 250px;
+        white-space: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__text-presentation {
+        margin-top: 20px;
+    }
+    &__btn {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        height: 20px;
+        width: 200px;
+        padding: 10px;
+        border: 0.5px ;
+        background: linear-gradient( to top, $violet , $pink);
+    }
+    &__btn-see-more {
+        color: white;
     }
 }
