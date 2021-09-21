@@ -281,6 +281,19 @@ input {
 .footer__menu-list {
   margin-top: 20px;
 }
+.footer__item {
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+.footer a {
+  color: #FFFFFF;
+}
+.footer__icon-margin {
+  margin-right: 10px;
+}
+.footer__icon-margin2 {
+  margin-right: 3px;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

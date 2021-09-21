@@ -309,4 +309,19 @@ input {
     &__menu-list {
         margin-top: 20px;
     }
+    &__item{
+        margin-top: 10px;
+        color: $white;
+    }
+    & a {
+        color: $white;
+
+    }
+    &__icon-margin {
+        margin-right: 10px;
+    
+    }
+    &__icon-margin2 {
+        margin-right: 3px;
+    }
 }
