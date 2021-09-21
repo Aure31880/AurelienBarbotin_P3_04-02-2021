@@ -295,6 +295,24 @@ input {
   margin-right: 3px;
 }
 
+/* GENERAL */
+hr {
+  width: 35px;
+  height: 3px;
+  margin-left: 0;
+  background: #99E2D0;
+  border: none;
+}
+
+.font-title-item {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.margin-choice {
+  margin-top: 40px;
+}
+
 /* HEADER LOGO */
 .headerCard {
   margin-top: 20px;
@@ -333,6 +351,35 @@ input {
 }
 .cardTitle__icon {
   margin-right: 20px;
+}
+
+/* ENTRANCE CARD */
+.card__title {
+  margin-top: 30px;
+}
+.card__items {
+  margin-top: 20px;
+}
+.card__item {
+  border-radius: 15px;
+  min-height: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  line-height: 1.5rem;
+  background-color: #FFFFFF;
+}
+.card__details-item {
+  font-weight: 300;
+  max-width: 80%;
+}
+.card__text-item {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__price {
+  margin-right: 10px;
 }
 
 html, body, div, span, applet, object, iframe,

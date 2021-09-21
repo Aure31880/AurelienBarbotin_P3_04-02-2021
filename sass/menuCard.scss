@@ -1,3 +1,23 @@
+/* GENERAL */
+
+hr {
+    width: 35px;
+    height: 3px;
+    margin-left: 0;
+    background: $green;
+    border: none;
+}
+
+.font-title-item {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.margin-choice {
+    margin-top: 40px;
+}
+
+
 /* HEADER LOGO */
 .headerCard {
     margin-top: 20px;
@@ -39,5 +59,38 @@
     }
     &__icon {
         margin-right: 20px;
+    }
+}
+
+/* ENTRANCE CARD */
+
+.card {
+    &__title {
+        margin-top: 30px;
+    }
+    &__items {
+        margin-top: 20px;
+    }
+    &__item {
+        border-radius: 15px;
+        min-height: 50px;
+        padding: 10px;
+        margin-top: 20px;
+        line-height: 1.5rem;
+        background-color: #FFFFFF;
+        
+    }
+    &__details-item {
+        font-weight: 300;
+        max-width: 80%; 
+    }
+    &__text-item {
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;    
+    }
+    &__price {
+        margin-right: 10px;
     }
 }
