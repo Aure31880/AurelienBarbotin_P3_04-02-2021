@@ -144,13 +144,13 @@ input {
   color: #9356DC;
 }
 
-header, section, footer {
+#head, #functioning, #restaurants, #foot {
   animation: loadingPage 6s ease-in-out;
 }
 
 /* LOADER SPINNER */
 .spinner__container {
-  position: fixed;
+  position: absolute;
   top: 15%;
   left: 0;
   width: 100%;
@@ -409,6 +409,9 @@ hr {
 }
 
 /* ENTRANCE CARD */
+.card {
+  animation: transMenu 1s ease-in-out;
+}
 .card__title {
   margin-top: 30px;
 }
@@ -422,6 +425,10 @@ hr {
   margin-top: 20px;
   line-height: 1.5rem;
   background-color: #FFFFFF;
+  animation: transItem 2s ease-out;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 .card__details-item {
   font-weight: 300;
@@ -488,6 +495,26 @@ hr {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes transMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes transItem {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 html, body, div, span, applet, object, iframe,

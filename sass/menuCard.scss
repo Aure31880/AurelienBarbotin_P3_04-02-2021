@@ -65,6 +65,7 @@ hr {
 /* ENTRANCE CARD */
 
 .card {
+animation: transMenu 1s ease-in-out;
     &__title {
         margin-top: 30px;
     }
@@ -78,7 +79,10 @@ hr {
         margin-top: 20px;
         line-height: 1.5rem;
         background-color: #FFFFFF;
-        
+        animation: transItem 2s ease-out;
+        animation-delay: 1s;
+        opacity: 0;
+        animation-fill-mode: forwards;
     }
     &__details-item {
         font-weight: 300;

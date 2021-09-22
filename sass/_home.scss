@@ -155,14 +155,14 @@ input {
     color: $violet;
 }
 
-header, section, footer{
+#head, #functioning, #restaurants, #foot{
     animation: loadingPage 6s ease-in-out
 }
 
 /* LOADER SPINNER */
 
 .spinner__container {
-    position: fixed;
+    position: absolute;
     top: 15%;
     left: 0;
     width: 100%;
