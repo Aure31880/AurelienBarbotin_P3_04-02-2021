@@ -35,6 +35,7 @@
     }
 }
 
+/* MENU PAGE */
 @keyframes transMenu {
     from {
         opacity: 0;
@@ -56,3 +57,39 @@
         transform: translateY(0%)
     }
 }
+
+@keyframes iconRotate {
+    from {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+
+@-webkit-keyframes slideInRight {
+    0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: translateX(-90%);
+    transform: translateX(-90%);
+    }
+    }
+    @keyframes slideInRight {
+    0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: translateX(-90%);
+    transform: translateX(-90%);
+    opacity: 1;
+    }
+    }

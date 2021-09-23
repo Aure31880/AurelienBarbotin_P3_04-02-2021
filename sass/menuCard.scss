@@ -72,6 +72,10 @@ animation: transMenu 1s ease-in-out;
     &__items {
         margin-top: 20px;
     }
+    &__box-bar {
+        position: relative;
+
+    }
     &__item {
         border-radius: 15px;
         min-height: 50px;
@@ -83,19 +87,76 @@ animation: transMenu 1s ease-in-out;
         animation-delay: 1s;
         opacity: 0;
         animation-fill-mode: forwards;
+        &:active {
+
+            & > .card__price {
+                transform: translateX(-250%);
+            }
+            & + .progresse{
+                &> .progresse__bar {
+                    transform: scaleX(1.2);
+                    transform-origin: right;
+                    opacity: 1; 
+                }
+                &> .progresse__icon-box {
+                    -webkit-animation-name: slideInRight;
+                    animation-name: slideInRight;
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+                    &> .progresse__icon-rotate {
+                        animation: iconRotate 1s ease-in;
+
+                    }
+                }
+            }
+        }
     }
     &__details-item {
         font-weight: 300;
         max-width: 80%; 
     }
     &__text-item {
-        width: 250px;
+        min-width: 250px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;    
     }
     &__price {
         margin-right: 10px;
+    }
+}
+
+.progresse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 72%;
+    width: 60px;
+    margin-bottom: 0;
+    margin-left: -60px;
+    &__bar {
+        height: 100%;
+        background: #99E2D0;
+        border-radius: 10px;
+        padding: 10px;
+        opacity: 0;
+        transform: scaleX(0);
+        transition: transform 1000ms cubic-bezier(.32, 0, .07, 1);
+        overflow: hidden;
+
+    }
+    &__icon-box {
+        position: relative;
+        bottom: 47px;
+        left: 65px;
+        opacity: 0;
+    }
+    &__icon-rotate {
+        align-items: center;
+        font-size: 25px;
+        color: #FFFFFF;
     }
 }
 
