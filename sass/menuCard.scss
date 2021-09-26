@@ -23,10 +23,13 @@ hr {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    display: flex;
+    &__icon-box {
+        position: relative;
+        right: 45%;
+    }
    &__logo {
        width: 150px;
-       margin-left: 50%;
+      
    }
 }
 
@@ -36,7 +39,7 @@ hr {
     margin-top: 10px;
 }
 
-.hero__background-img1 {
+.hero__background-img1{
     background-image: url('/public/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
     background-size: cover;
     background-position: center;
@@ -60,14 +63,6 @@ hr {
     background-position: center;
     min-height: 280px;
 }
-/* MENU CARD */
-
-#card {
-    border-radius: 20px 20px 0 0;
-    position: relative;
-    margin-top: -50px;
-    padding: 20px;
-}
 
 .cardTitle {
     &__title {
@@ -76,6 +71,14 @@ hr {
     &__icon {
         margin-right: 20px;
     }
+}
+/* MENU CARD */
+
+#card {
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    margin-top: -50px;
+    padding: 20px;
 }
 
 /* ENTRANCE CARD */
@@ -207,3 +210,26 @@ animation: transMenu 1s ease-in-out;
 
 /* RESPONSIVE TABLETTE */
 
+@media screen and(min-width: 1025px) {
+
+    .desk-view {
+        min-height: 380px;
+    }
+
+    .icon-size-desk {
+        font-size: 20px;
+    }
+
+    .card-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .card {
+        &__item {
+            width: 400px;
+        }
+    }
+
+}

@@ -13,15 +13,15 @@
 
 <body>
     <header>
-        <div class="headerCard">
-            <a href="/index.html" class="header__icon-box"><i class="fas fa-arrow-left"></i></a>
+        <div class="headerCard flex-center">
+            <a href="/index.html" class="headerCard__icon-box"><i class="fas fa-arrow-left icon-size-desk"></i></a>
             <div class="headerCard__logo-box">
                 <img src="/public/images/ohmyfood.png" class="headerCard__logo" alt="">
             </div>
         </div>
 
         <div class="hero">
-            <div class="hero__background-img1"></div>
+            <div class="hero__background-img1 desk-view"></div>
         </div>
     </header>
 
@@ -35,192 +35,194 @@
             </div>
         </div>
 
-        <!-- ENTRANCE CARD -->
-        <div class="card margin-choice">
-            <div class="card__title">
-                <h2>ENTRÉES</h2>
-                <hr>
+        <div class="card-box">
+            <!-- ENTRANCE CARD -->
+            <div class="card margin-choice">
+                <div class="card__title">
+                    <h2>ENTRÉES</h2>
+                    <hr>
+                </div>
+                <div class="card__items column-between">
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Fricassé d'escargot</h3>
+                                <p class="card__text-item">Au piment d'espelette</p>
+                            </div>
+                            <div class="card__price">
+                                25€
+                            </div>
+                        </div>
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Foie gras de canard mi-cuit</h3>
+                                <p class="card__text-item">Et ses copeaux de truffe noire</p>
+                            </div>
+                            <div class="card__price">
+                                35€
+                            </div>
+                        </div>
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Oeuf au plat</h3>
+                                <p class="card__text-item">Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
+                            <div class="card__price">
+                                20€
+                            </div>
+                        </div>
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card__items column-between">
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Fricassé d'escargot</h3>
-                            <p class="card__text-item">Au piment d'espelette</p>
-                        </div>
-                        <div class="card__price">
-                            25€
-                        </div>
-                    </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
-                        </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Foie gras de canard mi-cuit</h3>
-                            <p class="card__text-item">Et ses copeaux de truffe noire</p>
-                        </div>
-                        <div class="card__price">
-                            35€
-                        </div>
-                    </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
-                        </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Oeuf au plat</h3>
-                            <p class="card__text-item">Assaisonné à la truffe sur lit de caviar</p>
-                        </div>
-                        <div class="card__price">
-                            20€
-                        </div>
-                    </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
-                        </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- DISHES CARD -->
-        <div class="card margin-choice">
-            <div class="card__title">
-                <h2>PLATS</h2>
-                <hr>
+            <!-- DISHES CARD -->
+            <div class="card margin-choice">
+                <div class="card__title">
+                    <h2>PLATS</h2>
+                    <hr>
+                </div>
+                <div class="card__items column-between">
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Filet de boeuf aux herbes</h3>
+                                <p class="card__text-item">Accompagné de sa ribambelle de légumes</p>
+                            </div>
+                            <div class="card__price">
+                                40€
+                            </div>
+                        </div>
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Foie gras de canard mi-cuit</h3>
+                                <p class="card__text-item">Et ses copeaux de truffe noire</p>
+                            </div>
+                            <div class="card__price">
+                                35€
+                            </div>
+                        </div>
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Oeuf au plat</h3>
+                                <p class="card__text-item">Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
+                            <div class="card__price">
+                                20€
+                            </div>
+                        </div>
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card__items column-between">
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Filet de boeuf aux herbes</h3>
-                            <p class="card__text-item">Accompagné de sa ribambelle de légumes</p>
-                        </div>
-                        <div class="card__price">
-                            40€
-                        </div>
-                    </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
-                        </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Foie gras de canard mi-cuit</h3>
-                            <p class="card__text-item">Et ses copeaux de truffe noire</p>
-                        </div>
-                        <div class="card__price">
-                            35€
-                        </div>
-                    </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
-                        </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Oeuf au plat</h3>
-                            <p class="card__text-item">Assaisonné à la truffe sur lit de caviar</p>
-                        </div>
-                        <div class="card__price">
-                            20€
-                        </div>
-                    </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
-                        </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- DESSERTS CARD -->
-        <div class="card margin-choice">
-            <div class="card__title">
-                <h2>DESSERTS</h2>
-                <hr>
-            </div>
-            <div class="card__items column-between">
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Paris-Brest</h3>
-                            <p class="card__text-item">Revisité</p>
-                        </div>
-                        <div class="card__price">
-                            18€
-                        </div>
-                    </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
-                        </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
-                        </div>
-                    </div>
+            <!-- DESSERTS CARD -->
+            <div class="card margin-choice">
+                <div class="card__title">
+                    <h2>DESSERTS</h2>
+                    <hr>
                 </div>
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Macaron au chocolat d'exception</h3>
-                            <p class="card__text-item">Et ses copeaux de truffe noire</p>
+                <div class="card__items column-between">
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Paris-Brest</h3>
+                                <p class="card__text-item">Revisité</p>
+                            </div>
+                            <div class="card__price">
+                                18€
+                            </div>
                         </div>
-                        <div class="card__price">
-                            22€
-                        </div>
-                    </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
-                        </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__box-bar">
-                    <div class="card__item flex-end bshadow">
-                        <div class="card__details-item">
-                            <h3 class="font-title-item">Mousse au chocolat</h3>
-                            <p class="card__text-item">Au piment d'Espelette et à la truffe noire</p>
-                        </div>
-                        <div class="card__price">
-                            23€
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="progresse">
-                        <div class="progresse__bar">
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Macaron au chocolat d'exception</h3>
+                                <p class="card__text-item">Et ses copeaux de truffe noire</p>
+                            </div>
+                            <div class="card__price">
+                                22€
+                            </div>
                         </div>
-                        <div class="progresse__icon-box">
-                            <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__box-bar">
+                        <div class="card__item flex-end bshadow">
+                            <div class="card__details-item">
+                                <h3 class="font-title-item">Mousse au chocolat</h3>
+                                <p class="card__text-item">Au piment d'Espelette et à la truffe noire</p>
+                            </div>
+                            <div class="card__price">
+                                23€
+                            </div>
+                        </div>
+                        <div class="progresse">
+                            <div class="progresse__bar">
+                            </div>
+                            <div class="progresse__icon-box">
+                                <i class="fa fa-check-circle progresse__icon-rotate"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
