@@ -23,7 +23,9 @@ hr {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-
+    &__icon-box {
+        
+    }
    &__logo {
        width: 150px;
       
@@ -103,11 +105,9 @@ animation: transMenu 1s ease-in-out;
         animation-delay: 1s;
         opacity: 0;
         animation-fill-mode: forwards;
-        &:hover {
-            &> .card__details-item>.card__text-item{
-                max-width: 150px;
-            }
+        &:active {
 
+          
             & > .card__price {
                 transform: translateX(-250%);
                 transition-duration: 1s;
@@ -206,18 +206,6 @@ animation: transMenu 1s ease-in-out;
 
 /* RESPONSIVE TABLETTE */
 
-@media screen and (max-width: 330px) {
-    .card {
-        &__item:hover {
-            &> .card__details-item h3, p {
-                max-width: 170px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis; 
-            }
-        }
-    }
-}
 @media screen and(min-width: 1025px) {
 
     .desk-view {
@@ -237,11 +225,5 @@ animation: transMenu 1s ease-in-out;
    .card {
        flex: 1;
        margin: 20px;
-   &__item:hover{
-            &> .card__text-item {
-                max-width: auto;
-            }
-       }
    }
-
 }

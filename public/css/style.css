@@ -151,7 +151,7 @@ input {
 /* LOADER SPINNER */
 .spinner__container {
   position: absolute;
-  top: 15%;
+  top: 32%;
   left: 0;
   width: 100%;
   height: auto;
@@ -213,6 +213,7 @@ input {
   width: 200px;
   padding: 15px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
+  z-index: 999;
 }
 .headerHome__btn:hover {
   background: linear-gradient(to top, #9256dcb0, #ff79d9d0);
@@ -376,6 +377,10 @@ input {
     font-size: 22px;
   }
 
+  .headerHome__subtitle-presentation {
+    width: auto;
+  }
+
   .functioning__title {
     text-align: center;
   }
@@ -388,20 +393,21 @@ input {
     margin-right: 20px;
   }
   .functioning__choice {
-    width: 500px;
+    flex: 1;
+    margin: 20px;
   }
 
   .restaurants__title {
     text-align: center;
   }
-  .restaurants__block-items {
+  .restaurants__restaurant-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
-  .restaurants__item {
-    width: 650px;
-    margin: 20px 20px;
+  .restaurants__block-items {
+    flex: 1;
+    margin: 20px;
   }
   .restaurants__details-item {
     line-height: 2em;
@@ -430,10 +436,6 @@ hr {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
-}
-.headerCard__icon-box {
-  position: relative;
-  right: 45%;
 }
 .headerCard__logo {
   width: 150px;
@@ -512,19 +514,19 @@ hr {
   opacity: 0;
   animation-fill-mode: forwards;
 }
-.card__item:active > .card__details-item {
-  overflow: hidden;
+.card__item:hover > .card__details-item > .card__text-item {
+  max-width: 150px;
 }
-.card__item:active > .card__price {
+.card__item:hover > .card__price {
   transform: translateX(-250%);
   transition-duration: 1s;
 }
-.card__item:active + .progresse > .progresse__bar {
+.card__item:hover + .progresse > .progresse__bar {
   transform: scaleX(1.2);
   transform-origin: right;
   opacity: 1;
 }
-.card__item:active + .progresse > .progresse__icon-box {
+.card__item:hover + .progresse > .progresse__icon-box {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
   -webkit-animation-duration: 1s;
@@ -532,7 +534,7 @@ hr {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.card__item:active + .progresse > .progresse__icon-box > .progresse__icon-rotate {
+.card__item:hover + .progresse > .progresse__icon-box > .progresse__icon-rotate {
   animation: iconRotate 1s ease-in;
 }
 .card__details-item {
@@ -601,6 +603,14 @@ hr {
 }
 
 /* RESPONSIVE TABLETTE */
+@media screen and (max-width: 330px) {
+  .card__item:hover > .card__details-item h3, .card__item:hover p {
+    max-width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 @media screen and (min-width: 1025px) {
   .desk-view {
     min-height: 380px;
@@ -613,11 +623,15 @@ hr {
   .card-box {
     display: flex;
     justify-content: space-around;
-    align-items: start;
+    align-items: flex-start;
   }
 
-  .card__item {
-    width: 400px;
+  .card {
+    flex: 1;
+    margin: 20px;
+  }
+  .card__item:hover > .card__text-item {
+    max-width: auto;
   }
 }
 @keyframes loader {

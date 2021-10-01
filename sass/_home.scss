@@ -163,7 +163,7 @@ input {
 
 .spinner__container {
     position: absolute;
-    top: 15%;
+    top: 32%;
     left: 0;
     width: 100%;
     height: auto;
@@ -227,6 +227,7 @@ input {
         width: 200px;
         padding: 15px;
         background: linear-gradient( to top, $violet , $pink);
+        z-index: 999;
         &:hover {
             background: linear-gradient( to top, $violetlight , $pinklight2);
         }
@@ -416,7 +417,11 @@ input {
         font-weight: bold;
         font-size: 22px;
     }
-
+    .headerHome {
+        &__subtitle-presentation {
+            width: auto;
+        }
+    }
     .functioning {
         &__title {
             text-align: center;
@@ -430,7 +435,8 @@ input {
             margin-right: 20px;
         }
         &__choice {
-            width: 500px
+            flex: 1;
+            margin: 20px;
         }
     }
 
@@ -438,14 +444,14 @@ input {
         &__title {
             text-align: center;
         }
-        &__block-items {
+        &__restaurant-list {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
         }
-        &__item {
-            width: 650px;
-            margin: 20px 20px;
+        &__block-items {
+            flex: 1;
+            margin: 20px
         }
         &__details-item {
             line-height: 2em;
