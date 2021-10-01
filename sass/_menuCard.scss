@@ -64,6 +64,7 @@ hr {
 }
 
 .cardTitle {
+    @include flex-between;
     &__title {
         font-size: 26px;
     }
@@ -89,6 +90,7 @@ animation: transMenu 1s ease-in-out;
     }
     &__items {
         margin-top: 20px;
+        @include column-between;
     }
     &__box-bar {
         position: relative;
@@ -105,11 +107,10 @@ animation: transMenu 1s ease-in-out;
         animation-delay: 1s;
         opacity: 0;
         animation-fill-mode: forwards;
-        &:hover {
-            &> .card__details-item>.card__text-item{
-                //max-width: 150px;
-            }
+        @include flex-end;
+        @include bshadow;
 
+        &:hover {
             & > .card__price {
                 transform: translateX(-250%);
                 transition-duration: 1s;
@@ -197,11 +198,14 @@ animation: transMenu 1s ease-in-out;
         height: 40px;
         width: 180px;
         border: none;
+        border-radius: 30px;
         background: linear-gradient( to top, $violet , $pink);
         color: $white;
         transition: background 1s ease-in-out;
+        @include btnShadow;
         &:hover {
             background: linear-gradient( to top, $violetlight , $pinklight2);
+            @include btnShadowHover;
         }
     }
 }
@@ -220,13 +224,13 @@ animation: transMenu 1s ease-in-out;
         } 
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     .card {
         &__details-item h3{
             max-width: 240px;
             white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 }
