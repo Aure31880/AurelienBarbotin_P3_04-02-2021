@@ -226,11 +226,13 @@ animation: transMenu 1s ease-in-out;
 }
 @media screen and (max-width: 440px) {
     .card {
-        &__details-item h3{
-            max-width: 240px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        &__item:hover {
+            &> .card__details-item p{
+                max-width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
     }
 }

@@ -591,8 +591,8 @@ hr {
   }
 }
 @media screen and (max-width: 440px) {
-  .card__details-item h3 {
-    max-width: 240px;
+  .card__item:hover > .card__details-item p {
+    max-width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
