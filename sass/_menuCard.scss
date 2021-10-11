@@ -27,9 +27,9 @@ hr {
         text-align: center;
         margin-top:  -20px;
     }
-   &__logo {
+    &__logo {
         width: 150px;
-   }
+    }
 }
 
 /* HERO BANNER */
@@ -84,7 +84,7 @@ hr {
 /* ENTRANCE CARD */
 
 .card {
-animation: transMenu 1s ease-in-out;
+    animation: transMenu 1s ease-in-out;
     &__title {
         margin-top: 30px;
     }
@@ -121,6 +121,7 @@ animation: transMenu 1s ease-in-out;
                     transform: scaleX(1.2);
                     transform-origin: right;
                     opacity: 1; 
+
                 }
                 &> .progresse__icon-box {
                     -webkit-animation-name: slideInRight;
@@ -129,6 +130,8 @@ animation: transMenu 1s ease-in-out;
                     animation-duration: 1s;
                     -webkit-animation-fill-mode: both;
                     animation-fill-mode: both;
+                    width: 60px;
+                    left: 65px;
                     &> .progresse__icon-rotate {
                         animation: iconRotate 1s ease-in;
 
@@ -157,11 +160,11 @@ animation: transMenu 1s ease-in-out;
 .progresse {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
     height: 72%;
-    width: 60px;
+    // width: 60px;
     margin-bottom: 0;
-    margin-left: -60px;
+    // margin-left: -60px;
     &__bar {
         height: 100%;
         background: #99E2D0;
@@ -176,7 +179,7 @@ animation: transMenu 1s ease-in-out;
     &__icon-box {
         position: relative;
         bottom: 47px;
-        left: 65px;
+        // left: 65px;
         opacity: 0;
     }
     &__icon-rotate {
@@ -238,7 +241,7 @@ animation: transMenu 1s ease-in-out;
 }
 @media screen and(min-width: 1215px) {
     .card {
-        
+      
         &__details-item h3 {
             max-width: 100% !important;
             white-space: initial !important;
@@ -247,6 +250,7 @@ animation: transMenu 1s ease-in-out;
         }
         
     }
+    
 }
 
 @media screen and(min-width: 1100px) {
@@ -259,22 +263,22 @@ animation: transMenu 1s ease-in-out;
         font-size: 20px;
     }
 
-   .card-box {
-       display: flex;
-       justify-content: space-around;
-       align-items: flex-start;
-   }
+    .card-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
 
-   .card {
-       flex: 1;
-       margin: 20px;
-   &__details-item h3 {
-        max-width: 250px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-   } 
-   &__item:hover{
+    .card {
+        flex: 1;
+        margin: 20px;
+        &__details-item h3 {
+            max-width: 250px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        } 
+        &__item:hover{
             &> .card__details-item {
                 & h3 {
                     max-width: 200px;
@@ -286,7 +290,7 @@ animation: transMenu 1s ease-in-out;
                     max-width: 165px;
                 }
             }
-       }
-   }
+        }
+    }
 
 }

@@ -509,6 +509,8 @@ hr {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  width: 60px;
+  left: 65px;
 }
 .card__item:hover + .progresse > .progresse__icon-box > .progresse__icon-rotate {
   animation: iconRotate 1s ease-in;
@@ -532,11 +534,9 @@ hr {
 .progresse {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0px;
   height: 72%;
-  width: 60px;
   margin-bottom: 0;
-  margin-left: -60px;
 }
 .progresse__bar {
   height: 100%;
@@ -551,7 +551,6 @@ hr {
 .progresse__icon-box {
   position: relative;
   bottom: 47px;
-  left: 65px;
   opacity: 0;
 }
 .progresse__icon-rotate {
