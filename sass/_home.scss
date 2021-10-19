@@ -206,7 +206,7 @@ input {
         background: linear-gradient( to top, $violet , $pink);
         z-index: 999;
         @include btnShadow;
-        &:hover {
+        &:active {
             background: linear-gradient( to top, $violetlight , $pinklight2);
             @include btnShadowHover;
         }

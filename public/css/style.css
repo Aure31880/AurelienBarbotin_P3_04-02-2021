@@ -132,7 +132,7 @@ input {
   z-index: 999;
   box-shadow: #afafaf 0px 3px 14px 0px;
 }
-.headerHome__btn:hover {
+.headerHome__btn:active {
   background: linear-gradient(to top, #9256dcb0, #ff79d9d0);
   box-shadow: #929292 0px 3px 14px 0px;
 }
@@ -493,16 +493,16 @@ hr {
   align-items: end;
   box-shadow: #cacaca 0px 3px 14px 0px;
 }
-.card__item:hover > .card__price {
+.card__item:active > .card__price {
   transform: translateX(-250%);
   transition-duration: 1s;
 }
-.card__item:hover + .progresse > .progresse__bar {
+.card__item:active + .progresse > .progresse__bar {
   transform: scaleX(1.2);
   transform-origin: right;
   opacity: 1;
 }
-.card__item:hover + .progresse > .progresse__icon-box {
+.card__item:active + .progresse > .progresse__icon-box {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
   -webkit-animation-duration: 1s;
@@ -512,7 +512,7 @@ hr {
   width: 60px;
   left: 65px;
 }
-.card__item:hover + .progresse > .progresse__icon-box > .progresse__icon-rotate {
+.card__item:active + .progresse > .progresse__icon-box > .progresse__icon-rotate {
   animation: iconRotate 1s ease-in;
 }
 .card__details-item {
@@ -575,14 +575,14 @@ hr {
   transition: background 1s ease-in-out;
   box-shadow: #afafaf 0px 3px 14px 0px;
 }
-.btn-ordered__submit:hover {
+.btn-ordered__submit:active {
   background: linear-gradient(to top, #9256dcb0, #ff79d9d0);
   box-shadow: #929292 0px 3px 14px 0px;
 }
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width: 375px) {
-  .card__item:hover > .card__details-item h3, .card__item:hover p {
+  .card__item:active > .card__details-item h3, .card__item:active p {
     max-width: 170px;
     white-space: nowrap;
     overflow: hidden;
@@ -590,11 +590,16 @@ hr {
   }
 }
 @media screen and (max-width: 440px) {
-  .card__item:hover > .card__details-item p {
+  .card__item:active > .card__details-item p {
     max-width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+@media screen and (min-width: 1450px) {
+  .card__item:active > .card__details-item p {
+    max-width: 100% !important;
   }
 }
 @media screen and (min-width: 1215px) {
@@ -603,6 +608,15 @@ hr {
     white-space: initial !important;
     overflow: initial !important;
     text-overflow: initial !important;
+  }
+  .card__item:active > .card__details-item h3 {
+    max-width: 280px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card__item:active p {
+    max-width: 600px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -630,13 +644,13 @@ hr {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .card__item:hover > .card__details-item h3 {
+  .card__item:active > .card__details-item h3 {
     max-width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .card__item:hover > .card__details-item p {
+  .card__item:active > .card__details-item p {
     max-width: 165px;
   }
 }
