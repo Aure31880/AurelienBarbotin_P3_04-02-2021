@@ -414,28 +414,28 @@ hr {
 }
 
 .hero__background-img1 {
-  background-image: url("/public/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: center;
   min-height: 280px;
 }
 
 .hero__background-img2 {
-  background-image: url("/public/images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("../images/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-size: cover;
   background-position: center;
   min-height: 280px;
 }
 
 .hero__background-img3 {
-  background-image: url("/public/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("../images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
   background-position: center;
   min-height: 280px;
 }
 
 .hero__background-img4 {
-  background-image: url("/public/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("../images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   background-position: center;
   min-height: 280px;
