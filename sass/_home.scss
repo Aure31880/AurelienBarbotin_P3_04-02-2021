@@ -185,7 +185,7 @@ input {
     }
     &__subtitle-presentation {
         width: 250px;
-        white-space: wrap;
+        white-space: normal;
         margin-left: auto;
         margin-right: auto;
     }
@@ -309,9 +309,9 @@ input {
         @include flex-start;
     }
     &__hover-rate {
-        &:active {
+        &:hover {
             font-weight: bold;
-            transition-delay: 2s ease-out;
+            transition-delay: 1s;
             background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
             background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
             background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
