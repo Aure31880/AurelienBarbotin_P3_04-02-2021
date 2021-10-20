@@ -237,6 +237,12 @@ input {
         @include flex-around;
         @include border;
         @include bshadow;
+        &:hover {
+            background-color: $pinklight;
+            &> .functioning__icon-box {
+                color: $violet;
+            }
+        }
     }
     &__icon-box {
         @include flex-center;
@@ -248,7 +254,7 @@ input {
         border: none; 
         font-weight: 900;
         font-size: 16px;
-        
+ 
     }
     &__icon-box {
         @include flex-center;

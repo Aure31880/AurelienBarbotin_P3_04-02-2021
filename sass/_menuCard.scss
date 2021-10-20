@@ -1,4 +1,9 @@
 /* GENERAL */
+@mixin carteAnim {
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
 
 hr {
     width: 35px;
@@ -103,10 +108,6 @@ hr {
         margin-top: 20px;
         line-height: 1.5rem;
         background-color: #FFFFFF;
-        animation: transItem 2s ease-out;
-        animation-delay: 1s;
-        opacity: 0;
-        animation-fill-mode: forwards;
         @include flex-end;
         @include bshadow;
 
@@ -139,6 +140,34 @@ hr {
                 }
             }
         }
+    }
+    &__item.key-1 {
+        animation: transItem 1s ease-out;
+        animation-delay: 1s;
+        // animation-fill-mode: forwards;
+        @include carteAnim;
+
+    }
+    &__item.key-2 {
+        // opacity: 0;
+        animation: transItem 1s ease-out;
+        animation-delay: 1300ms;
+        @include carteAnim;
+        // animation-fill-mode: forwards;
+    }
+    &__item.key-3 {
+        // opacity: 0;
+        animation: transItem 1s ease-out;
+        animation-delay: 1600ms;
+        @include carteAnim;
+        // animation-fill-mode: forwards;
+    }
+    &__item.key-4 {
+        // opacity: 0;
+        animation: transItem 1s ease-out;
+        animation-delay: 1800ms;
+        @include carteAnim;
+        // animation-fill-mode: forwards;
     }
     &__details-item {
         font-weight: 300;
